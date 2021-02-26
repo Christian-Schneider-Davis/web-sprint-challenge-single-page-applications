@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <Route path="/" component={Home}/>
+    <Route path="/contact" component={Contact}/>
+    <Route path="/pizza" component={Pizza}/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -39,5 +42,16 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
+  
+    <Route exact path="/" component={Home}/>
+    <Route path="/pizza" component={Pizza}/>
+
+    <ul className="navbar">
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/pizza">Pizza</Link></li>
+      <li><Link to="/contact">Contact</Link></li>
+    </ul>
+    
   </body>
 </html>
