@@ -1,15 +1,31 @@
 import React from "react";
 
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-
 const App = () => {
   return (
     <>
       <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
+      
     </>
   );
 };
+
 export default App;
 
+function setUp() {
+  return (
+    <div className="App">
+      <form>
+        <label htmlFor= 'fnameInput'> First Name</label>
+        <input
+        maxLength ="20"
+        placeholder= "First Name"
+        id= "fnameInput"
+        name= "fname"
+        type="text" />
+        /><br />
+      </form>
+    </div>
+  );
+}
 
+//export default setUp;
